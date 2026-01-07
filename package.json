@@ -10,12 +10,13 @@
     "centimetres"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "convert": "node index.js"
   },
   "author": "Rabbit",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.6.2"
+    "chalk": "^5.6.2",
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "prettier": "^3.7.4"
