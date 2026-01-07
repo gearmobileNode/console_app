@@ -20,7 +20,9 @@ if (
   process.env.COLORIZE &&
   process.env.COLORIZE.trim().toLowerCase() === 'no'
 ) {
-  console.log(`${inches}\" >>> ${centimetres} см.`);
+  console.log(`${inches}\" ${chalk.yellow('>>>')} ${centimetres} см.`);
 } else {
-  console.log(`${chalk.yellow(inches)}\" >>> ${chalk.green(centimetres)} см.`);
+  console.log(
+    `${chalk.yellow(inches)}\" ${chalk.yellow('>>>')} ${chalk.green(centimetres)} см.`,
+  );
 }
